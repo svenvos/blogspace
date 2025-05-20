@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: "Poetsen One", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 16px 48px;
+    border: none;
+    border-radius: 30px;
+    background-color: aquamarine;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover, button:focus {
+    background-color: rgb(38, 250, 180);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    height: 30px;
+    width: 100vw;
+    padding: 25px 0;
+}
+
+nav a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: aquamarine;
+}
+
+main {
+    max-width: 500px;
+    margin: 75px auto 25px;
+    padding: 0 16px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+input, textarea {
+    padding: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+.blog-posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.blog-post:not(:last-child){
+    border-bottom: 1px solid aquamarine;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.blog-post h3 {
+    text-transform: capitalize;
+}
+
+.blog-post p {
+    padding-bottom: 0.5em;
+}
